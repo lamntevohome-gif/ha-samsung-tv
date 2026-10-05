@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Samsung TV",
+        "description": "Enter the TV IP address. TV must be ON and on the same network.",
+        "data": { "host": "IP address", "name": "Name", "mac": "MAC address (wired LAN, for Wake-on-LAN)" }
+      },
+      "pair": {
+        "title": "Pair with TV",
+        "description": "Press Submit, then select **Allow** on the TV screen ({host}) within 30 seconds."
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach the TV. Is it on and on the same network?",
+      "auth_denied": "The TV denied or did not answer the pairing request."
+    },
+    "abort": { "already_configured": "This TV is already configured." }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "hdmi_count": "Number of HDMI ports",
+          "mac": "MAC address (Wake-on-LAN)",
+          "smartthings_token": "SmartThings token (optional)",
+          "smartthings_device_id": "SmartThings device ID (optional)"
+        }
+      }
+    }
+  }
+}
